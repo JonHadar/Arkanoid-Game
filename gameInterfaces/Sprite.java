@@ -1,4 +1,4 @@
-// 209522382 Yehonatan Hadar
+//Yehonatan Hadar
 package gameInterfaces;
 import biuoop.DrawSurface;
 
