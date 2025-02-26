@@ -1,4 +1,4 @@
-// 209522382 Yehonatan Hadar
+//Yehonatan Hadar
 package gameInterfaces;
 /**
  * The HitNotifier interface should be implemented by any class that
