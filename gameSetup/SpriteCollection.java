@@ -1,4 +1,4 @@
-// 209522382 Yehonatan Hadar
+//Yehonatan Hadar
 package gameSetup;
 import biuoop.DrawSurface;
 import java.util.ArrayList;
