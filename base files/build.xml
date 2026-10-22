@@ -1,13 +1,14 @@
-<project default="compile">
+<!-- Run from the repository root: ant -f "base files/build.xml" run -->
+<project default="compile" basedir="..">
 
     <!-- Define a property, which is like a variable for the build file, -->
     <!--  with the classpath for all compilation & execution targets. -->
-    <property name="classpath" value="bin:biuoop-1.4.jar"/>
+    <property name="classpath" value="bin:base files/biuoop-1.4.jar"/>
 
-    <!-- Compile all java files under `src`, and export .class files into `bin` -->
+    <!-- Compile all java files in the repository, and export .class files into `bin` -->
     <target name="compile">
         <mkdir dir="bin"/>
-        <javac classpath="${classpath}" srcdir="src" destdir="bin" includeantruntime="false"/>
+        <javac classpath="${classpath}" srcdir="." destdir="bin" includeantruntime="false"/>
     </target>
 
     <target name="clean">
