@@ -172,11 +172,7 @@ public class Paddle implements Sprite, Collidable {
                 angle = 330;
                 break;
             case 3:
-                angle = currentVelocity.getAngleOfVelocity();
-                if (currentVelocity.getDy() > 0) {
-                    currentVelocity = new Velocity(currentVelocity.getDx(), -currentVelocity.getDy());
-                }
-                break;
+                return new Velocity(currentVelocity.getDx(), -Math.abs(currentVelocity.getDy()));
             case 4:
                 angle = 30;
                 break;
@@ -184,8 +180,7 @@ public class Paddle implements Sprite, Collidable {
                 angle = 60;
                 break;
             default:
-                angle = currentVelocity.getAngleOfVelocity();
-                break;
+                return new Velocity(currentVelocity.getDx(), -Math.abs(currentVelocity.getDy()));
         }
 
         //Updating the velocity
